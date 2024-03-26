@@ -25,10 +25,14 @@ function Tasks() {
 
   return (
     <div className="App">
+      <div>
+        <h1>Lista de pessoas</h1>
+      </div>
       {!!erroMsg && <div className='error-msg'>{erroMsg}</div>}
       {pessoas.length > 0 && pessoas.map((item) => {
         return (
           <div>
+            <h3>nome: {item.id}</h3>
             <h3>nome: {item.Nome}</h3>
             <h3>nome: {item.Telefone}</h3>
             <h3>nome: {item.Email}</h3>
